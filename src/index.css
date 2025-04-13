@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-bg {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.overlay-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-bg {
+  background-color: #0f172a;
+}
+
+.card-bg {
+  background-color: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-bg:hover:before {
+  opacity: 1;
+}
+
+.tech-stack-gradient {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.pricing-card-popular {
+  background: linear-gradient(145deg, #1e293b, #2d3748);
+  border: 2px solid #3b82f6;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.pricing-card {
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover, .pricing-card-popular:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.navbar-bg {
+  background-color: #0f172a;
+}
+
+.footer-bg {
+  background-color: #0f172a;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}

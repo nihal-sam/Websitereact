@@ -1,0 +1,30 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Menu } from 'lucide-react';
+
+export const Navigation: React.FC = () => {
+  return (
+    <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-sm">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <Link to="/" className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-[#9aca3c] rounded flex items-center justify-center">
+              <span className="text-black font-bold">C</span>
+            </div>
+            <span className="text-white font-bold text-xl">Creative</span>
+          </Link>
+          <div className="hidden md:flex items-center gap-8">
+            <Link to="/" className="text-white hover:text-[#9aca3c] transition-colors">Home</Link>
+            <a href="#" className="text-white hover:text-[#9aca3c] transition-colors">About Us</a>
+            <a href="#" className="text-white hover:text-[#9aca3c] transition-colors">Service</a>
+            <a href="#" className="text-white hover:text-[#9aca3c] transition-colors">Pages</a>
+            <a href="#" className="text-white hover:text-[#9aca3c] transition-colors">Contact Us</a>
+          </div>
+          <div className="md:hidden">
+            <Menu className="text-white w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
