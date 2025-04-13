@@ -1,6 +1,6 @@
 # Freelance Project: Client Dashboard for SoftSolve
 
-🌐 **Live Demo**: [View Dashboard](https://majestic-pavlova-aa83c2.netlify.app)
+🌐 **Live Demo**: [View Dashboard](https://softsolvep.netlify.app/)
 
 ## 📝 Project Overview
 A modern admin dashboard built for SoftSolve using React + Vite. This responsive web application providesreal-time analytics visualization and client management tools  with optimized production performance.
